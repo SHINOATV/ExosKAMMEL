@@ -114,10 +114,30 @@
     </select>
             </div>
 
+            <div class='col-sm-6'>
+                <div class="form-group">
+                    <div class='input-group date' id='datetimepicker2'>
+                        <input type='text' class="form-control" size="16" value="17-03-2017"/>
+                        <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <!-- Ne fonctionne pas -->
+            <script type="text/javascript">
+                $(function () {
+                    $('#datetimepicker2').datetimepicker({
+                        locale: 'ru'
+                    });
+                });
+            </script>
+
+
             <div class="form-group">
                 <label for="exampleInputFile">Illustrez votre citation</label>
                 <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
-                <small id="fileHelp" class="form-text text-muted">Ne partagez pas d'informations personnelles dans vos captures d'écrans</small>
+                <small id="fileHelp" class="form-text text-muted">Ne partagez pas d'informations personnelles dans vos images</small>
             </div>
 
             <fieldset class="form-group">
@@ -125,13 +145,13 @@
                 <div class="form-check">
                     <label class="form-check-label">
         <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-        YES .
+        NO .
       </label>
                 </div>
                 <div class="form-check">
                     <label class="form-check-label">
         <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
-        NO .
+        YES .
       </label>
                 </div>
                 <div class="form-check">
