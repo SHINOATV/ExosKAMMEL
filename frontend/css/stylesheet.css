@@ -7,11 +7,13 @@
 ==================================================
 \************************************************/
 
+
 /************************************************\
 ==================================================
 1. Font
 ==================================================
 \************************************************/
+
 @font-face {
   font-family: 'Folkard';
   src: url('/fonts/folkard_.ttf');
@@ -21,11 +23,38 @@
   font-family: 'Folkard';
 }
 
+.p {
+  margin: 0 0 0px;
+}
+
 /************************************************\
 ==================================================
 2. Navbar
 ==================================================
 \************************************************/
+
+.navbar {
+  height: 150px;
+  padding: 0;
+}
+
+.navbar-brand>img {
+  height: 450%;
+  padding: 7px 15px;
+  width: auto;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: #777;
+  padding-top: 50px;
+  font-size: 230%;
+}
+
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border: none;
+}
+
 
 
 /************************************************\
@@ -33,6 +62,7 @@
 3. Citation
 ==================================================
 \************************************************/
+
 .kaamelott-underline {
   border-bottom: solid 5px #a57824;
 }
@@ -42,7 +72,7 @@
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
-  color: white;
+  color: darkred;
 }
 
 p.source {
@@ -110,3 +140,37 @@ blockquote {
 4. Footer
 ==================================================
 \************************************************/
+
+.footer {
+  margin-top: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 0px;
+  color: #000000;
+  background: lightgrey;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, lightgrey 0%, #e6f4f1 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, lightgrey 0%, #e6f4f1 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, lightgrey 0%, #e6f4f1 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='lightgrey', endColorstr='#e6f4f1', GradientType=0);
+  /* IE6-9 */
+}
+
+.copyright {
+  padding-top: -50px;
+}
+
+.res-soc {
+  font-style: italic;
+}
+
+
+/* Masquer le trait bleu sous les icones ... ne fonctionne pas */
+
+.text-center:focus {
+  outline: none;
+}
